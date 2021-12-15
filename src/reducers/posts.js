@@ -1,7 +1,8 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (posts = [], action) => {
-    switch(action.type) {
+    switch (action.type) {
         case 'FETCH_POSTS':
-            return posts;
+            return action.payload;
         case 'CREATE':
             return posts;
         default:
