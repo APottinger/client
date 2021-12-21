@@ -10,7 +10,7 @@ const App = () => {
   
   useEffect(() => {
     dispatch(getPosts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
